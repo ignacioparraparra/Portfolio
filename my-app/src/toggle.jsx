@@ -20,6 +20,9 @@ export default function ToggleMenu() {
                 <p>CIT 173: Intro to Linux <i>RHEL</i></p>
                 <p>CS202: Object Oriented Programming <i>C++</i></p>
                 <p>CS218: Systems Programming <i>x86</i></p>
+                <br></br>
+                <h4>Certifications</h4>
+                <p>Google Cybersecurity Professional Certificate: <i>Python, SQL, BASH, SIEM, Linux</i></p>
             </div>
         </div>,
         Experience: 

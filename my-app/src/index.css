@@ -43,11 +43,11 @@ p {
 }
 
 .iconBar {
-  padding-top: none;
+  padding-top: 1.75rem;
   margin-top: none;
   display: flex;
   flex-direction: row;
-  padding-left: 1rem;
+
 
 }
 
@@ -104,47 +104,50 @@ p {
 
 .nav_button {
   margin-right: 2rem;
+  text-decoration: none;
 
 }
 
 .nav_button :hover {
   color: var(--color-accent);
   cursor: pointer;
+  font-size: large;
   
 }
 
 .intro_container {
-  padding-top: 1rem;
+  padding-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin: 1rem 1rem;
   padding-bottom: none;
   display: flex;
   flex-direction: row;
 }
 
 .Hero_text_container {
-  flex: 70%
-}
-
-
-.Hero_image_container {
-  flex: 30%;
+  vertical-align: middle;
   
 }
 
-.Hero_image_container {
 
+.Hero_image_container {
+    overflow: hidden;
+    padding-left: 5rem;
+    padding-right: .25rem;
+    border-radius: 150px;
+    padding-bottom: 1rem;
 }
 
 .HeroImage {
-    
+    border-radius: 150px;
 }
 
 .toggleContainer {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0;
   margin: 1rem 1rem;
   
 }
@@ -188,11 +191,61 @@ p {
   
 }
 
+.Project-page {
+  display: flex;
+  flex-direction: column;
+  flex:100%;
+}
+
+.Project-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  border-radius: 20px;
+  border: 3px solid var(--color-pre-primary)
+}
+
+.Project-card {
+
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+}
+
+.Project-card p {
+  font-size: larger;
+}
+
+
 @media screen and (max-width: 600px) {
     .toggleContainer, .nav, .intro_container, .iconBar {
     flex: 0 0 auto;
-    width: 70%;
-}
+    width: 70%; }
+
+    .intro_container {
+        flex-direction: column-reverse;
+    }
+
+    .Hero_image_container {
+        margin-top: .5rem;
+        padding-left: 0;
+        padding-bottom: .5rem;
+    }
+
+    .Hero_text_container h1 {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .Project-row {
+        flex-direction: column;
+    }
+
+    .iconBar {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
 }
 
 
