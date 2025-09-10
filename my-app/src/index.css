@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+  color: var(--color-secondary)
+}
+
+:root {
+        --color-primary: hsl(218, 50%, 10%);
+        --color-pre-primary: hsl(218, 50%, 15%);
+        --color-secondary: hsl(218, 50%, 90%);
+        --color-tertiary: hsl(278, 80%, 80%);
+        --color-accent: hsl(158, 80%, 80%);
+    }
+
+body {
+  margin:0;
+  padding:0;
+  height:100vh;
+  background-color: var(--color-primary);
+}
+
+h1 {
+  padding-bottom: 1rem;
+  color: var(--color-tertiary)
+}
+
+p {
+  padding-bottom: 8px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh
+}
+
+.toggleContainer, .nav, .intro_container, .iconBar {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.iconBar {
+  padding-top: none;
+  margin-top: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 1rem;
+
+}
+
+.icons {
+  fill: var(--color-accent)
+  
+}
+
+.resumeDownload {
+  color: var(--color-accent);
+  background-color: var(--color-primary);
+  border: 3px solid var(--color-pre-primary);
+  border-radius: 20px;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.resumeIcon {
+  padding: .27rem .27rem;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+}
+
+.resumeText {
+  font-size: medium;
+  align-items: center;
+  padding-bottom: 0;
+  padding-top: 7px;
+  padding-right: .25rem;
+  color: var(--color-accent);
+}
+
+.icons :hover {
+  fill: var(--color-secondary);
+  cursor: pointer;
+}
+
+.nav {
+  padding: 1rem 1rem;
+  margin-bottom: .25rem;
+  margin-top: 1rem;
+}
+
+.nav_elements {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.nav_button {
+  margin-right: 2rem;
+
+}
+
+.nav_button :hover {
+  color: var(--color-accent);
+  cursor: pointer;
+  
+}
+
+.intro_container {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 1rem 1rem;
+  padding-bottom: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.Hero_text_container {
+  flex: 70%
+}
+
+
+.Hero_image_container {
+  flex: 30%;
+  
+}
+
+.Hero_image_container {
+    border: 1px var(--color-pre-primary) solid;
+}
+
+.HeroImage {
+  
+}
+
+.toggleContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  
+}
+
+.toggleButtons {
+  flex: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  background-color: var(--color-pre-primary);
+}
+
+.toggleButton {
+    padding: .5rem .5rem;
+    background-color: var(--color-tertiary);  
+    color: var(--color-primary);
+    border: none;
+    padding-right: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+
+.toggleButtons .toggle-active {
+  background-color: var(--color-pre-primary);
+  color: var(--color-tertiary);
+  cursor:default;
+}
+
+.toggleBox {
+  flex: auto;
+  margin-top: 1%;
+  border-radius: 20px;
+  border: 3px solid var(--color-pre-primary);
+}
+
+.textbox {
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  
+}
+
+
