@@ -8,3 +8,5 @@ export default defineConfig({
   plugins: [netlify(), react()]
 
 })
+
+// netlify() reput

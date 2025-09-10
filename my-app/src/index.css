@@ -134,11 +134,11 @@ p {
 }
 
 .Hero_image_container {
-    border: 1px var(--color-pre-primary) solid;
+
 }
 
 .HeroImage {
-  
+    
 }
 
 .toggleContainer {
@@ -186,6 +186,13 @@ p {
   padding: 1rem 1rem;
   margin: 1rem 1rem;
   
+}
+
+@media screen and (max-width: 600px) {
+    .toggleContainer, .nav, .intro_container, .iconBar {
+    flex: 0 0 auto;
+    width: 70%;
+}
 }
 
 
