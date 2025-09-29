@@ -26,6 +26,11 @@ h1 {
   color: var(--color-tertiary)
 }
 
+h2 {
+  padding-bottom: 1rem;
+  color: var(--color-tertiary)
+}
+
 p {
   padding-bottom: 8px;
 }
@@ -200,19 +205,32 @@ p {
 .Project-row {
   display: flex;
   flex-direction: row;
-  margin-top: 1rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
   border-radius: 20px;
   border: 3px solid var(--color-pre-primary)
 }
 
 .Project-card {
-
+  flex: auto;
+  flex-direction: column;
   padding: 1rem 1rem;
   margin: 1rem 1rem;
 }
 
+
+
 .Project-card p {
   font-size: larger;
+ 
+}
+
+.Project-card-box h2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+ 
 }
 
 
