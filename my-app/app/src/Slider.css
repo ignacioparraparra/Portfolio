@@ -48,3 +48,9 @@
     transform: translateX(-50%);
   }
 }
+
+@media (max-width: 768px) {
+    .marquee-track {
+      animation: scroll 75s linear infinite; 
+    }
+} 
