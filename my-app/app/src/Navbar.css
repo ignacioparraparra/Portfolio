@@ -1,0 +1,121 @@
+#root {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width:100%;
+}
+
+.navbar-container {
+    flex: .4;
+    border: .1rem var(--color-secondary) solid;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-logo, .navbar-qoute, .navbar-links, .navbar-socials, .navbar-tidbit {
+    flex: 1;
+
+}
+
+.navbar-logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: .1rem var(--color-secondary) solid;
+}
+
+.navbar-icon {
+    padding: 1rem;
+    color: var(--color-secondary);
+}
+
+.navbar-qoute {
+    flex: 2;
+    display:flex;
+    border-right: .1rem var(--color-secondary) solid;
+    font-size: clamp(1rem, 2.5vw, 3rem);
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+    color: var(--color-secondary);
+}
+
+.navbar-links {
+    border-right: .1rem var(--color-secondary) solid;
+}
+
+.navbar-socials {
+    border-right: .1rem var(--color-secondary) solid;
+    display: flex;
+    flex: 2;
+}
+
+.navbar-socials .icons-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.navbar-socials a {
+  all: unset;
+  display: inline-flex;      /* or inline-flex if you need flex behavior */
+  cursor: pointer;
+}
+
+
+.icons-container .linkedin-container {
+    flex: 2;
+}
+
+.icons-container .github-container {
+    flex: 2;
+    border-top: .1rem var(--color-secondary) solid;
+}
+
+.icons-container .github-container, .icons-container .linkedin-container {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    transition: color 250ms ease;
+    color: var(--color-secondary);
+}
+
+.icons-container .github-container::before, .icons-container .linkedin-container::before {
+    content: "";
+    background-color: var(--color-secondary);
+    transform: translateX(-105%);
+    transition: transform 400ms ease;
+    z-index: 0;
+    inset: 0;
+    position: absolute;  
+}
+
+.icons-container .github-container:hover::before, .icons-container .linkedin-container:hover::before {
+    transform: translateX(0);
+}
+
+.icons-container .github-container > *, .icons-container .linkedin-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.icons-container .github-container:hover, .icons-container .linkedin-container:hover {
+    color: var(--color-primary);
+}
+
+.navbar-socials .toggle-container {
+    flex: 1;
+    display: flex;
+    border-left: .1rem var(--color-secondary) solid;
+}
+
+
+.navbar-tidbit {
+    border-right: .1rem var(--color-secondary) solid;
+}

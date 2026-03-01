@@ -1,0 +1,48 @@
+.page-wrapper {
+    padding: 20px; 
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: calc(100vh - 40px);
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    background-color: var(--color-primary);
+    border: .1rem var(--color-secondary) solid;
+}
+
+.header, .content, .footer, .slider-container {
+    
+    border: .1rem var(--color-secondary) solid;
+}
+
+.header {
+    display: flex;
+    flex: 1;
+}
+
+.slider-container {
+    flex: .5;
+    border-bottom: 0;
+}
+
+.content {
+    flex: 8;
+    display: flex;
+    border-bottom: 0;
+    min-height: 0;
+}
+
+.footer {
+    flex: 1;
+    font-size: clamp(1rem, 10vw, 8rem);
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    text-align: center;
+    color: var(--color-secondary);
+}
+

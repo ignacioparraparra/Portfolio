@@ -1,0 +1,20 @@
+.visualizer {
+    display:flex;
+    align-items: flex-end;
+    flex: 1;
+    overflow: hidden;
+}
+
+.bar {
+    background-color: var(--color-secondary);
+    flex:1;
+    transition: height 120ms linear, background-color 120ms linear;
+}
+
+.bar.active-left {
+    background-color: var(--color-accent1);
+}
+
+.bar.active-right {
+    background-color: var(--color-accent2);
+}

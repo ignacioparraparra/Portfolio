@@ -1,0 +1,50 @@
+.marquee {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+
+    mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.marquee-track {
+  animation: scroll 25s linear infinite;
+}
+
+.marquee-track, .marquee-group {
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+
+.marquee-group span {
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 2rem;
+    white-space: nowrap;
+    font-weight: 500;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
