@@ -33,13 +33,12 @@ function BubbleSortViz() {
             setActivePair(null);
 
             window.setTimeout(() => {
-
+                jRef.current = 0;
+                iRef.current = 0;
+                setValues(randomArray(50,100));
+            return prev;
             }, 1500)
 
-            jRef.current = 0;
-            iRef.current = 0;
-            setValues(randomArray(50,100));
-            return prev;
         }
 
         const next = [...prev];

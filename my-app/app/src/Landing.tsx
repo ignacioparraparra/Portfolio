@@ -16,7 +16,8 @@ function Landing () {
             </div>
             <div className='footer'>
                 <a href="/ParraParraResume02282026.pdf" target="_blank">
-                    <span>SOFTWARE ENGINEER</span>
+                    <span className='footer-text-main'>SOFTWARE ENGINEER</span>
+                    <span className='footer-text-hover'>RESUME</span>
                 </a> 
             </div>
             <div className='slider-container'>
