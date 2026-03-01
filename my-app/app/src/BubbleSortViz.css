@@ -1,9 +1,10 @@
 .visualizer {
     display:flex;
     align-items: flex-end;
-    height:320px;
     flex: 1;
+    min-height: 0;
     overflow: hidden;
+    position: relative;
 }
 
 .bar {

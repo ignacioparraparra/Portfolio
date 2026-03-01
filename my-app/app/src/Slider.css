@@ -1,10 +1,9 @@
 .marquee {
+    flex: 1;
     display: flex;
     overflow: hidden;
-    width: 100%;
     align-items: center;
     justify-content: center;
-    height: 4rem;
 
     mask-image: linear-gradient(
     to right,
@@ -17,6 +16,7 @@
 
 .marquee-track {
   animation: scroll 25s linear infinite;
+  will-change: transform;
 }
 
 .marquee-track, .marquee-group {
@@ -33,6 +33,7 @@
     padding-right: 2rem;
     white-space: nowrap;
     font-weight: 500;
+    flex-shrink: 0;
 }
 
 .marquee:hover .marquee-track {
@@ -45,7 +46,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-33.333%);
   }
 }
 
