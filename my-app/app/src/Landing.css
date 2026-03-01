@@ -87,9 +87,10 @@
   height: 100%;
 }
 
+
 .footer-text-main, .footer-text-hover {
     transition: opacity 180ms ease;
-    white-space: nowrap;
+    padding: 1rem;
 }
 
 .footer-text-main { display: block;}
