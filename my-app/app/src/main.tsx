@@ -1,9 +1,10 @@
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import Landing from './Landing.tsx'
+import './styles/index.css'
+import Landing from './pages/Landing/Landing.tsx'
+import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
-  
-    <Landing/>
-  
+    <BrowserRouter>
+       <Landing/>   
+    </BrowserRouter>    
 )

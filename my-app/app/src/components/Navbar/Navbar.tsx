@@ -1,5 +1,5 @@
 import './Navbar.css'
-import DarkMode from './DarkMode'
+import DarkMode from '../DarkMode/DarkMode'
 
 function Navbar() {
     return(

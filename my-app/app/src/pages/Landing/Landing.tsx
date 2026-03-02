@@ -1,7 +1,7 @@
 import './Landing.css'
-import Navbar from './Navbar'
-import Slider from './Slider'
-import BubbleSortViz from './BubbleSortViz'
+import Navbar from '../../components/Navbar/Navbar'
+import Slider from '../../components/Slider/Slider'
+import BubbleSortViz from '../../components/BubbleSortViz/BubbleSortViz'
 
 function Landing () {
     return (
@@ -15,7 +15,7 @@ function Landing () {
                 <Slider/>
             </div>
             <div className='footer'>
-                <a href="/ParraParraResume02282026.pdf" target="_blank">
+                <a href="/docs/resume.pdf" target="_blank" rel="noopener noreferrer">
                     <span className='footer-text-main'>SOFTWARE ENGINEER</span>
                     <span className='footer-text-hover'>RESUME</span>
                 </a> 
